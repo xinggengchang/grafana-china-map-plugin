@@ -4,6 +4,8 @@ Grafana集成Echarts
 Grafana v4.1.x 
 Echarts v4.0.x
 
+自定义数据源部分的代码出自这位大神 https://github.com/Billiballa/dxc-echarts-panel
+
 ## 中国地图
 **ES数据源**
 ![ ](./src/imgs/chinamap-es.png)
@@ -65,6 +67,7 @@ option = {
 
 ## 自定义数据源
 **配置数据源**
+![ ](./src/imgs/cdata.png)
 示例中URL返回数据格式如下
 ```javascript
 {"y": ["10", "100", "20", "12", "150"], "x": ["2018-01-01", "2018-01-02", "2018-01-03", "2018-01-04", "2018-01-05"]}
@@ -82,7 +85,7 @@ option = {
 
 
 ## 插件开发
-- git clone https://github.com/soWill666/grafana-echarts-panel
+- git clone https://github.com/heruihong/grafana-echarts-panel
 - npm install 
 - grunt
 
