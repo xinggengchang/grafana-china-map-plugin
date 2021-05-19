@@ -13,6 +13,9 @@ Echarts v4.0.x
 **Metrics**
 ![ ](./src/imgs/metrics.png)
 
+**Echarts chart type**
+![ ](./src/imgs/chart-type.png)
+
 **Echarts option**
 ![ ](./src/imgs/map_option.png)
 ```javascript
