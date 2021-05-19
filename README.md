@@ -1,12 +1,14 @@
 ## Echarts Panel Plugin for Grafana
 
 Grafana集成Echarts
-Grafana v4.1.x 
+Grafana v7.5.4
 Echarts v4.0.x
 
-## 中国地图
-**ES数据源**
-![ ](./src/imgs/chinamap-es.png)
+感谢https://github.com/wuyi5630/grafana-echarts-panel 大哥的贡献。
+此插件在大哥贡献的基础上做了修改：
+	1 支持高版本Grafana,目前支持7.5.4及以上，7以上版本也支持但是没亲试过。
+	2 修复了panel保存报错的问题。
+	3 ES Location Name Field支持geoip.region_name 英文key，ES geo_point Field 可以不填（wuyi5630贡献有一个bug是Average计算不对，所以针对bug做了修改）
 
 **Metrics**
 ![ ](./src/imgs/metrics.png)
@@ -62,31 +64,5 @@ option = {
 **效果图**
 ![ ](./src/imgs/chinamap.png)
 
-
-## 自定义数据源
-**配置数据源**
-示例中URL返回数据格式如下
-```javascript
-{"y": ["10", "100", "20", "12", "150"], "x": ["2018-01-01", "2018-01-02", "2018-01-03", "2018-01-04", "2018-01-05"]}
-```
-
-**配置Echarts**
-![ ](./src/imgs/line_option.png)
-
-**效果图**
-![ ](./src/imgs/cdata_ret.png)
-
-
 ## 插件安装
 - 将本实例clone到你的plugins目录后重新启动grafana服务即可
-
-
-## 插件开发
-- git clone https://github.com/soWill666/grafana-echarts-panel
-- npm install 
-- grunt
-
-
-## 附录
-- [官方开发指南](http://docs.grafana.org/plugins/developing/development/)
-- [官方示例插件](https://github.com/grafana/piechart-panel)
